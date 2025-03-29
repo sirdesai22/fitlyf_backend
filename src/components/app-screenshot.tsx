@@ -27,14 +27,14 @@ export default function AppScreenshot() {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
       )}
     >
-      <div className="rounded-[40px] bg-gray-900 p-2 shadow-xl">
+      <div className="rounded-[40px] bg-gray-900 p-2 shadow-xl min-w-[300px]">
         <div className="overflow-hidden rounded-[32px] bg-white">
           <div className="bg-gray-100 h-12 flex items-center justify-center">
             <div className="w-16 h-6 bg-black rounded-full mx-auto"></div>
           </div>
           <div className="relative">
             <img
-              src="/placeholder.svg?height=600&width=300"
+              src="/screenshot.png?height=600&width=300"
               alt="FitLyf App Screenshot"
               className="w-full h-[550px] object-cover"
             />

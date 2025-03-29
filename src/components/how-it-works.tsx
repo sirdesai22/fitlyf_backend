@@ -59,9 +59,9 @@ export default function HowItWorks() {
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl text-primary-foreground">
               {step.icon}
             </div>
-            {index < steps.length - 1 && (
+            {/* {index < steps.length - 1 && (
               <div className="absolute left-full top-1/2 hidden h-px w-full -translate-y-1/2 transform bg-gray-200 lg:block"></div>
-            )}
+            )} */}
           </div>
           <h3 className="mb-2 text-xl font-bold">{step.title}</h3>
           <p className="text-gray-500 dark:text-gray-400">{step.description}</p>
