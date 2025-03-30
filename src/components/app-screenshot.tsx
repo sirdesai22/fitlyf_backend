@@ -40,7 +40,7 @@ export default function AppScreenshot() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <div className="text-lg font-bold">Today's Journal</div>
+              <div className="text-lg font-bold">Today&apos;s Journal</div>
               <div className="text-sm opacity-80">Calories: 1,850 / 2,000</div>
               <div className="mt-2 flex gap-2">
                 <div className="h-2 flex-1 rounded-full bg-white/20">
