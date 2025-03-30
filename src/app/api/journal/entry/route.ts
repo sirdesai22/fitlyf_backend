@@ -10,14 +10,7 @@ async function getAIResponse(journalEntry: string) {
     if (!journalEntry) {
         return "Please provide a journal entry";
     }
-    const prompt = `Generate sum of calories, protein, carbs, and fat of all the foods mentioned in ${journalEntry} and provide small info about mentioned meal using this JSON schema:
-
-    Meal = {'calories': number, 'protein': number, 'carbs': number, 'fat': number, 'mealInfo': string}
-    Return: Array<Meal>
-    
-    Remember the meal can me as small as 1 item or as large as 10 items so provide the above information for the meal.
-
-    JUST PROVIDE JSON DATA!
+    const prompt = `Extract the total calories, protein, carbs, and fat from the foods listed in ${journalEntry}. The foods may be individual ingredients or full meals. Summarize the meal in a short description.
     `;
 
     const response = await gemini.models.generateContent({
